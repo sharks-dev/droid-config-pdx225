@@ -13,6 +13,10 @@ Requires: droid-config-pdx225-preinit-plugin
 Requires: droid-config-pdx225-flashing
 Requires: droid-config-pdx225-bluez5
 Requires: droid-hal-version-pdx225
+Requires: droid-hal-pdx225-detritus
+
+# For mount partitions
+Requires: parse-android-dynparts
 
 # Hybris packages
 Requires: libhybris-libEGL
