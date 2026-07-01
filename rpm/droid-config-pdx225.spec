@@ -19,6 +19,8 @@ Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 Obsoletes: ofono-configs-binder
 
+Requires: libgbinder-tools
+
 # Pixel ratio 1.0 was originally jolla phone with 245ppi, and the devices
 # should roughly have their ppi compared to that. Large displays can use
 # bigger ratio if seen fit. Values are with 0.25 increments.
