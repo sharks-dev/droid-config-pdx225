@@ -29,3 +29,4 @@
 /etc/pulse/default_sailfish.pa.d/droid.pa
 /etc/pulse/x-maemo-match.table
 /etc/pulse/mainvolume-listening-time-notifier.conf
+/lib/udev/rules.d/99-pulseaudio-ignore-builtin-card.rules
