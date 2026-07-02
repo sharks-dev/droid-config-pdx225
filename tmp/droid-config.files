@@ -100,6 +100,7 @@
 /usr/lib/systemd/system/local-fs.target.wants/vendor.mount
 /usr/lib/systemd/system/local-fs.target.wants/system.mount
 /usr/lib/systemd/system/system.mount
+/usr/share/csd/settings.d/10-hwsettings.ini
 /usr/libexec/droid-hybris/system/etc/init/hwservicemanager.rc
 /usr/libexec/droid-hybris/system/etc/init/ofono-ril-ecclists.rc
 /usr/libexec/droid-hybris/system/etc/init/vndservicemanager.rc
@@ -107,6 +108,13 @@
 /usr/bin/droid/dmsetup.sh
 /usr/bin/droid/droid-hal-early-init.sh
 /linkerconfig/ld.config.txt
+/system/lib/libandroidicu.so
+/system/lib/libnativehelper.so
+/system/lib/libicui18n.so
+/system/lib/libicuuc.so
+/system/lib64/libandroidicu.so
+/system/lib64/libicui18n.so
+/system/lib64/libicuuc.so
 /etc/modules-load.d/pdx225.conf~
 /etc/modules-load.d/pdx225.conf
 /etc/binder.d/pdx225.conf
