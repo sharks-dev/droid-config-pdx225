@@ -94,6 +94,12 @@ Requires: nfcd-binder-plugin
 # Splash screen
 #Requires: yamuisplash
 
+#Add FP support
+#TODO: I couldn't manage to get the below to build.
+#Requires: sailfish-fpd-community
+#Requires: sailfish-devicelock-fpd
+#Requires: droid-fake-crypt
+
 %description -n patterns-sailfish-device-adaptation-pdx225
 Pattern with packages for pdx225 HW Adaptation
 

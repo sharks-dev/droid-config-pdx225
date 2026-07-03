@@ -1,66 +1,43 @@
-# Disable some Android side services for SFOS by pointing them to a non-existing files.
-# Further service definitions will be ignored and these ones have to be included first.
+service netd netd_HYBRIS_DISABLED
+
+service installd installd_HYBRIS_DISABLED
+
+service cameraserver cameraserver_HYBRIS_DISABLED
 
 service audioserver audioserver_HYBRIS_DISABLED
-    disabled
-    override
-service cameraserver cameraserver_HYBRIS_DISABLED
-    disabled
-    override
-service installd installd_HYBRIS_DISABLED
-    disabled
-    override
-service keymaster-3-0 keymaster_HYBRIS_DISABLED
-    disabled
-    override
-service keystore keystore_HYBRIS_DISABLED
-    disabled
-    override
-service lmkd lmkd_HYBRIS_DISABLED
-    disabled
-    override
-service media mediaserver_HYBRIS_DISABLED
-    disabled
-    override
-service netd netd_HYBRIS_DISABLED
-    disabled
-    override
-service qti qti_HYBRIS_DISABLED
-    disabled
-    override
-service qti-testscripts qti-testscripts_HYBRIS_DISABLED
-    disabled
-    override
-service storaged storaged_HYBRIS_DISABLED
-    disabled
-    override
-service surfaceflinger surfaceflinger_HYBRIS_DISABLED
-    disabled
-    override
-service time_daemon time_daemon_HYBRIS_DISABLED
-    disabled
-    override
+
 service update_engine update_engine_HYBRIS_DISABLED
-    disabled
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service_HYBRIS_DISABLED
+
+service lmkd /system/bin/lmkd_HYBRIS_DISABLED
+
+service vold /system/bin/vold_HYBRIS_DISABLED
+
+service wificond /system/bin/wificond_HYBRIS_DISABLED
+
+service storaged /system/bin/storaged_HYBRIS_DISABLED
+
+service surfaceflinger surfaceflinger_HYBRIS_DISABLED
+
+service bootanim /system/bin/bootanimation_HYBRIS_DISABLED
+
+service vendor.usb-hal-1-3 /vendor/bin/hw/android.hardware.usb@1.3-service_HYBRIS_DISABLED
+
+service vendor.vibrator-1-0 /vendor/bin/hw/android.hardware.vibrator@1.0-service_HYBRIS_DISABLED
+
+service update_verifier_nonencrypted /system/bin/update_verifier_HYBRIS_DISABLED nonencrypted
+
+service update_verifier /system/bin/update_verifier_HYBRIS_DISABLED ${vold.decrypt}
+
+service gpu /system/bin/gpuservice_HYBRIS_DISABLED
+
+service time_daemon /vendor/bin/time_daemon_HYBRIS_DISABLED
     override
-service update_verifier update_verifier_HYBRIS_DISABLED
-    disabled
+
+service mediaextractor /system/bin/mediaextractor_HYBRIS_DISABLED
     override
-service update_verifier_nonencrypted update_verifier_nonencrypted_HYBRIS_DISABLED
-    disabled
-    override
-service vendor.audio-hal-2-0 audio-hal_HYBRIS_DISABLED
-    disabled
-    override
-service vendor.dataqti qti_HYBRIS_DISABLED
-    disabled
-    override
-service vendor.livedisplay-hal-2-0 livedisplay-hal_HYBRIS_DISABLED
-    disabled
-    override
-service vold vold_HYBRIS_DISABLED
-    disabled
-    override
-service wificond wificond_HYBRIS_DISABLED
-    disabled
-    override
+
+service mediametrics /system/bin/mediametrics_HYBRIS_DISABLED
+
+service bpfloader /system/bin/netbpfload_HYBRIS_DISABLED
