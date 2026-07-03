@@ -7,7 +7,7 @@
 %define vendor_pretty Sony
 %define device_pretty Xperia 10 IV
 
-%define android_version_major 14
+%define android_version_major 15
 
 %define droid_target_aarch64 1
 
