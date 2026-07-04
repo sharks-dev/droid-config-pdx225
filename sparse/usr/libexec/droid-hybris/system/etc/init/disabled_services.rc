@@ -10,8 +10,6 @@ service audioserver audioserver_HYBRIS_DISABLED
 
 service update_engine update_engine_HYBRIS_DISABLED
 
-service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service_HYBRIS_DISABLED
-
 service lmkd /system/bin/lmkd_HYBRIS_DISABLED
 
 service vold /system/bin/vold_HYBRIS_DISABLED

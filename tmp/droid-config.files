@@ -81,7 +81,6 @@
 /etc/gst-droid/gstdroidcodec.conf
 /etc/ofono/ril_subscription.conf
 /etc/ofono/ril_subscription.d/dual-sim.conf
-/lib64/linkerconfig/manifest.xml
 /var/lib/environment/compositor/droid-hal-device.conf
 /usr/lib/systemd/system/wait_for_keymint.service
 /usr/lib/systemd/system/system_ext.mount
@@ -91,6 +90,7 @@
 /usr/lib/systemd/system/product.mount
 /usr/lib/systemd/system/dmsetup.service
 /usr/lib/systemd/system/droid-bootctl.service
+/usr/lib/systemd/system/vendor-lib64-hw-audio.primary.default.so.mount
 /usr/lib/systemd/system/network.target.wants/wifisetup.service
 /usr/lib/systemd/system/odm.mount
 /usr/lib/systemd/system/graphical.target.wants/droid-bootctl.service
@@ -101,6 +101,7 @@
 /usr/lib/systemd/system/local-fs.target.wants/system_root.mount
 /usr/lib/systemd/system/local-fs.target.wants/product.mount
 /usr/lib/systemd/system/local-fs.target.wants/dmsetup.service
+/usr/lib/systemd/system/local-fs.target.wants/vendor-lib64-hw-audio.primary.default.so.mount
 /usr/lib/systemd/system/local-fs.target.wants/odm.mount
 /usr/lib/systemd/system/local-fs.target.wants/vendor_dlkm.mount
 /usr/lib/systemd/system/local-fs.target.wants/vendor.mount
