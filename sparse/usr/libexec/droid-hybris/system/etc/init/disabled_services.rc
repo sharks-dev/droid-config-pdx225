@@ -33,10 +33,10 @@ service update_verifier /system/bin/update_verifier_HYBRIS_DISABLED ${vold.decry
 service gpu /system/bin/gpuservice_HYBRIS_DISABLED
 
 service time_daemon /vendor/bin/time_daemon_HYBRIS_DISABLED
-    override
+override
 
 service mediaextractor /system/bin/mediaextractor_HYBRIS_DISABLED
-    override
+override
 
 service mediametrics /system/bin/mediametrics_HYBRIS_DISABLED
 
