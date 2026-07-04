@@ -1,3 +1,5 @@
+service iddd iddd_HYBRIS_DISABLED
+
 service netd netd_HYBRIS_DISABLED
 
 service installd installd_HYBRIS_DISABLED
