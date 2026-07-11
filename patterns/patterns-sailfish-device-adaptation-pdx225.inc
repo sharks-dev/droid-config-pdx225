@@ -18,13 +18,17 @@ Requires: droid-hal-pdx225-detritus
 # For mount partitions
 Requires: parse-android-dynparts
 
+# For suspend to work with enabled Wi-Fi on newer Qualcomm devices (from droid-config-sony-nagara)
+Requires: sailfish-connman-plugin-suspend
+
 # Hybris packages
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
 # Sensors
-Requires: hybris-libsensorfw-qt5
+Requires: sensorfw-qt5 = 0.15.1
+Requires: hybris-libsensorfw-qt5-binder >= 0.15.2
 
 # Bluetooth
 Requires: bluebinder
