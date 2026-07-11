@@ -117,12 +117,13 @@
 /system/lib64/libicui18n.so
 /system/lib64/libicuuc.so
 /etc/modules-load.d/pdx225.conf
-/etc/binder.d/pdx225.conf
 /etc/mce/70-battery-pdx225.ini
+/etc/ofono/binder.d/pdx225.conf
 /etc/selinux/config
 /etc/selinux/minimum/policy/policy.30
 /etc/selinux/minimum/contexts/files/file_contexts
 /etc/selinux/minimum/contexts/dbus_contexts
 /etc/task_profiles
+/etc/libncicore.conf
 /etc/task_profiles.json
 /usr/share/ssu/features.d/adaptation-community.ini
