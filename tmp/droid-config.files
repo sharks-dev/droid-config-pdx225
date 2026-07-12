@@ -31,7 +31,6 @@
 /etc/sec_config
 /etc/sap.conf
 /etc/media_codecs_performance.xml
-/etc/ofono/binder.d/dual-sim.conf
 /etc/ofono/binder.conf
 /etc/acdbdata
 /etc/xtra_root_cert.pem
@@ -126,4 +125,5 @@
 /etc/task_profiles
 /etc/libncicore.conf
 /etc/task_profiles.json
+/etc/usb-moded/99-usb-moded-pdx225.ini
 /usr/share/ssu/features.d/adaptation-community.ini

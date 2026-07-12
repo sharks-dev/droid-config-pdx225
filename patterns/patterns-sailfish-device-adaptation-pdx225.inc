@@ -78,6 +78,11 @@ Requires: rfkill
 # enable device lock and allow to select untrusted software
 Requires: jolla-devicelock-daemon-encsfa
 
+# Enable fingerprint reader
+# TODO: I can't seem to build fake_crypt so I can't use community fpd, and I tried official fpd but I have "vendor.egistec.hardware.fingerprint@4.0::IBiometricsFingerprintRbs/default" where it wants "android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint/default"
+#Requires: sailfish-devicelock-fpd
+#Requires: sailfish-fpd
+
 # Enable home encryption
 #Requires: sailfish-device-encryption
 

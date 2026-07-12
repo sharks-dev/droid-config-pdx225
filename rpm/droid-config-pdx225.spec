@@ -14,6 +14,10 @@
 # Community HW adaptations need this
 %define community_adaptation 1
 
+# Device-specific usb-moded configuration
+Provides: usb-moded-configs
+Obsoletes: usb-moded-defaults
+
 # Device-specific ofono configuration
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
