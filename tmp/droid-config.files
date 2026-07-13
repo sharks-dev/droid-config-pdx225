@@ -115,9 +115,9 @@
 /system/lib64/libandroidicu.so
 /system/lib64/libicui18n.so
 /system/lib64/libicuuc.so
-/etc/modules-load.d/pdx225.conf
-/etc/mce/70-battery-pdx225.ini
-/etc/ofono/binder.d/pdx225.conf
+/etc/modules-load.d/xqcc72.conf
+/etc/mce/70-battery-xqcc72.ini
+/etc/ofono/binder.d/xqcc72.conf
 /etc/selinux/config
 /etc/selinux/minimum/policy/policy.30
 /etc/selinux/minimum/contexts/files/file_contexts
@@ -125,5 +125,5 @@
 /etc/task_profiles
 /etc/libncicore.conf
 /etc/task_profiles.json
-/etc/usb-moded/99-usb-moded-pdx225.ini
+/etc/usb-moded/99-usb-moded-xqcc72.ini
 /usr/share/ssu/features.d/adaptation-community.ini

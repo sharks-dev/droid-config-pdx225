@@ -1,7 +1,7 @@
-# DisplayName: Jolla pdx225/@ARCH@ (release) 1
+# DisplayName: Jolla xqcc72/@ARCH@ (release) 1
 # KickstartType: release
-# DeviceModel: pdx225
-# DeviceVariant: pdx225
+# DeviceModel: xqcc72
+# DeviceVariant: xqcc72
 # Brand: Jolla
 # SuggestedImageType: fs
 # SuggestedArchitecture: aarch64
@@ -13,19 +13,19 @@ part / --size 500 --ondisk sda --fstype=ext4
 
 ## No suitable configuration found in /tmp/sandbox/usr/share/ssu/kickstart/bootloader
 
-repo --name=adaptation-common-pdx225-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/jolla-hw/adaptation-common/@ARCH@/
-repo --name=adaptation-community-common-pdx225-@RELEASE@ --baseurl=https://repo.sailfishos.org/obs/nemo:/devel:/hw:/common/sailfish_latest_@ARCH@/
+repo --name=adaptation-common-xqcc72-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/jolla-hw/adaptation-common/@ARCH@/
+repo --name=adaptation-community-common-xqcc72-@RELEASE@ --baseurl=https://repo.sailfishos.org/obs/nemo:/devel:/hw:/common/sailfish_latest_@ARCH@/
 repo --name=apps-@RELEASE@ --baseurl=https://releases.jolla.com/jolla-apps/@RELEASE@/@ARCH@/
 repo --name=customer-jolla-@RELEASE@ --baseurl=https://releases.jolla.com/features/@RELEASE@/customers/jolla/@ARCH@/
 repo --name=hotfixes-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/hotfixes/@ARCH@/
 repo --name=jolla-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/jolla/@ARCH@/
 
 %packages
-patterns-sailfish-device-configuration-pdx225
+patterns-sailfish-device-configuration-xqcc72
 %end
 
 %attachment
-### Commands from /tmp/sandbox/usr/share/ssu/kickstart/attachment/pdx225
+### Commands from /tmp/sandbox/usr/share/ssu/kickstart/attachment/xqcc72
 /boot/hybris-boot.img
 /boot/hybris-updater-script
 /boot/hybris-updater-unpack.sh
@@ -142,7 +142,7 @@ export SSU_RELEASE_TYPE=release
 ### begin hybris
 pushd $IMG_OUT_DIR
 
-DEVICE=pdx225
+DEVICE=xqcc72
 
 VERSION_FILE=./os-release
 source $VERSION_FILE

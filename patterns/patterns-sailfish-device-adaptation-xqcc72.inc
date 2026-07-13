@@ -1,18 +1,18 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-%package -n patterns-sailfish-device-adaptation-pdx225
-Summary: Jolla HW Adaptation pdx225
+%package -n patterns-sailfish-device-adaptation-xqcc72
+Summary: Jolla HW Adaptation xqcc72
 Requires: droid-hal-pdx225
 Requires: droid-hal-pdx225-img-boot
 Requires: droid-hal-pdx225-kernel-modules
-Requires: droid-config-pdx225-sailfish
-Requires: droid-config-pdx225-pulseaudio-settings
-Requires: droid-config-pdx225-policy-settings
-Requires: droid-config-pdx225-preinit-plugin
-Requires: droid-config-pdx225-flashing
-Requires: droid-config-pdx225-bluez5
-Requires: droid-hal-version-pdx225
+Requires: droid-config-xqcc72-sailfish
+Requires: droid-config-xqcc72-pulseaudio-settings
+Requires: droid-config-xqcc72-policy-settings
+Requires: droid-config-xqcc72-preinit-plugin
+Requires: droid-config-xqcc72-flashing
+Requires: droid-config-xqcc72-bluez5
+Requires: droid-hal-version-xqcc72
 Requires: droid-hal-pdx225-detritus
 
 # For mount partitions
@@ -103,7 +103,7 @@ Requires: nfcd-binder-plugin
 # Splash screen
 #Requires: yamuisplash
 
-%description -n patterns-sailfish-device-adaptation-pdx225
-Pattern with packages for pdx225 HW Adaptation
+%description -n patterns-sailfish-device-adaptation-xqcc72
+Pattern with packages for xqcc72 HW Adaptation
 
-%files -n patterns-sailfish-device-adaptation-pdx225
+%files -n patterns-sailfish-device-adaptation-xqcc72

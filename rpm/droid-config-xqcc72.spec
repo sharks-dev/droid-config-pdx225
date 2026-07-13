@@ -2,6 +2,7 @@
 # Feel free to cleanup this file by removing comments, once you have memorised them ;)
 
 %define device pdx225
+%define rpm_device xqcc72
 %define vendor sony
 
 %define vendor_pretty Sony
@@ -31,8 +32,8 @@ Requires: libgbinder-tools
 %define pixel_ratio 1.75
 
 %include droid-configs-device/droid-configs.inc
-%include patterns/patterns-sailfish-device-adaptation-pdx225.inc
-%include patterns/patterns-sailfish-device-configuration-pdx225.inc
+%include patterns/patterns-sailfish-device-adaptation-xqcc72.inc
+%include patterns/patterns-sailfish-device-configuration-xqcc72.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:

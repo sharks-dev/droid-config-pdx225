@@ -1,10 +1,10 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-%package -n patterns-sailfish-device-configuration-pdx225
-Summary: Jolla Configuration pdx225
-Requires: patterns-sailfish-device-configuration-common-pdx225
-Requires: patterns-sailfish-device-adaptation-pdx225
+%package -n patterns-sailfish-device-configuration-xqcc72
+Summary: Jolla Configuration xqcc72
+Requires: patterns-sailfish-device-configuration-common-xqcc72
+Requires: patterns-sailfish-device-adaptation-xqcc72
 
 # For devices with cellular modem. Those without one, please comment out:
 Requires: patterns-sailfish-cellular-apps
@@ -37,7 +37,7 @@ Requires: geoclue-provider-mlsdb
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
-%description -n patterns-sailfish-device-configuration-pdx225
-Pattern with packages for pdx225 configurations
+%description -n patterns-sailfish-device-configuration-xqcc72
+Pattern with packages for xqcc72 configurations
 
-%files -n patterns-sailfish-device-configuration-pdx225
+%files -n patterns-sailfish-device-configuration-xqcc72
