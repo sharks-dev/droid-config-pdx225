@@ -1,0 +1,6 @@
+AUTHOR=sharks
+EMAIL=
+BROKEN=Rejecting calls,Fingerprint,usb-modded,Dual-sim
+FEATURES=VoLTE,More featured than Official port
+DEVICE=Xperia 10 IV
+URL=https://forum.sailfishos.org/t/lineage-based-port-for-xperia-10-iv/30708

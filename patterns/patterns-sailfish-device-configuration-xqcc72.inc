@@ -17,6 +17,9 @@ Requires: sailfish-content-graphics-z%{icon_res}
 # For multi-SIM devices
 #Requires: jolla-settings-networking-multisim
 
+# Flashlight
+Requires: jolla-settings-system-flashlight
+
 # For devices which support NFC
 Requires: jolla-settings-system-nfc
 Requires: nfcd-dbuslog-plugin
