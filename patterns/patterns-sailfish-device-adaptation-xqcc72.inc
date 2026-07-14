@@ -39,6 +39,10 @@ Requires: dummy_netd
 #Requires: ofono-vendor-qti-radio-plugin
 Requires: ofono-binder-plugin-ext-qti
 
+# Bluetooth telephony
+# From ringus's work on nagara
+Requires: droid-bthelper
+
 # Vibra
 Requires: ngfd-plugin-native-vibrator
 Requires: libngf-qt5-qtfeedback
