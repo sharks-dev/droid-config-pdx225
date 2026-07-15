@@ -5,7 +5,7 @@
 Summary: Jolla HW Adaptation xqcc72
 Requires: droid-hal-pdx225
 Requires: droid-hal-pdx225-img-boot
-Requires: droid-hal-pdx225-kernel-modules
+Requires: droid-hal-pdx225-kernel-dtbo
 Requires: droid-config-xqcc72-sailfish
 Requires: droid-config-xqcc72-pulseaudio-settings
 Requires: droid-config-xqcc72-policy-settings
