@@ -104,15 +104,15 @@ mv temp.img sailfish.img
 /usr/bin/img2simg sailfish.img sailfish.img001
 rm sailfish.img
 
-chmod 755 flash.*
+#chmod 755 flash.*
 
-FILES="flash* *.img* *.exe *.dll *-release"
+FILES="*.img* *.exe *.dll *-release"
 
 # Set supported devices in flash scripts
-if [ "@DEVICEMODEL@" = "xqcc72" ]; then
-  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-CC72\"/g" -i flash-config.sh
-  sed -e "s/\@DEVICES\@/:: XQ-CC72/g" -i flash-on-windows.bat
-fi
+#if [ "@DEVICEMODEL@" = "xqcc72" ]; then
+#  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-CC72\"/g" -i flash-config.sh
+#  sed -e "s/\@DEVICES\@/:: XQ-CC72/g" -i flash-on-windows.bat
+#fi
 
 mkdir -p ${RELEASENAME}
 
