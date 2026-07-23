@@ -1,4 +1,4 @@
-CPUCHECK_STRING=""
+CPUCHECK_STRING="0xd05"
 
 PART_1="boot"
 
