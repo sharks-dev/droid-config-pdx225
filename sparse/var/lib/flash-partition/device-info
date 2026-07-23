@@ -1,0 +1,7 @@
+CPUCHECK_STRING=""
+
+PART_1="boot"
+
+PART_REAL_1="sda31"
+
+PART_I="1"
