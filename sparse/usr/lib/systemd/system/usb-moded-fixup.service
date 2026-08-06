@@ -1,0 +1,12 @@
+[Unit]
+Description=Fixup for usb-moded to enable MTP reliably
+Before=usb-moded.service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/usb-moded-fixup.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
