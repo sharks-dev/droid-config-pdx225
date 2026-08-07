@@ -10,6 +10,6 @@ if ! mountpoint -q "/config"; then
 fi
 
 mkdir -p "/config/usb_gadget/g1/strings/0x409"
-mkdir -p "/config/usb_gadget/g1/configs/c.1/strings/0x409"
+mkdir -p "/config/usb_gadget/g1/configs/b.1/strings/0x409"
 
 exit 0
