@@ -84,6 +84,7 @@ Requires: sailfish-devicelock-fpd
 Requires: sailfish-fpd-community
 Requires: droid-fake-crypt
 Obsoletes: jolla-devicelock-daemon-encsfa
+Obsoletes: jolla-devicelock-plugin-encsfa
 
 # Enable home encryption
 #Requires: sailfish-device-encryption
