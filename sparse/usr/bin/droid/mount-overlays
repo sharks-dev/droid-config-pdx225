@@ -1,0 +1,75 @@
+#!/bin/sh
+# From Nagara port;
+# https://github.com/sailfishos-sony-nagara/droid-config-sony-nagara/blob/37db4f9e6082150fcb13d3212648e36065757724/sparse/usr/sbin/mount-overlays
+# Thanks to @rinigus
+
+show_help() {
+    echo "Usage: $0 <overlay-tree>"
+    echo "Provide a folder for overlay"
+    echo
+    echo "Options:"
+    echo "  -h    Show this help message"
+    exit 0
+}
+
+wait_for_folder() {
+    TARGET_DIR="$1"
+    TIMEOUT=10
+    WAIT=0
+
+    while [ "$WAIT" -lt "$TIMEOUT" ]; do
+        if [ -d "$TARGET_DIR" ]; then
+            return 0  # Folder found
+        fi
+        sleep 1
+        WAIT=$((WAIT + 1))
+    done
+
+    return 1  # Timeout reached, folder not found
+}
+
+if [ "$1" = "-h" ]; then
+    show_help
+fi
+
+if [ $# -ne 1 ]; then
+    show_help
+fi
+
+OVERLAYS_BASE=$1
+WORK_SUBFOLDER=".work"
+WORK_BASE="$OVERLAYS_BASE/$WORK_SUBFOLDER"
+
+# Create the work directory if it doesn't exist
+mkdir -p "$WORK_BASE"
+
+# Find the directories under overlays excluding .work
+find "$OVERLAYS_BASE"/* -mindepth 1 -maxdepth 1 -type d | while read -r OVERLAY_DIR; do
+  REL_PATH=${OVERLAY_DIR#$OVERLAYS_BASE/}
+
+  # Corresponding target directory in /
+  TARGET_DIR="/$REL_PATH"
+
+  wait_for_folder "$TARGET_DIR"
+
+  # Skip if the target directory doesn't exist
+  if [ ! -d "$TARGET_DIR" ]; then
+    echo "Target directory $TARGET_DIR does not exist, skipping overlay..."
+    continue
+  fi
+
+  # Create workdir
+  WORK_DIR="$WORK_BASE/$REL_PATH"
+  mkdir -p "$WORK_DIR"
+
+  MERGED_DIR="/$REL_PATH"
+
+  # Overlay mount
+  echo "Mounting overlay: $OVERLAY_DIR -> $TARGET_DIR"
+  mount -t overlay overlay \
+    -o lowerdir="$TARGET_DIR",upperdir="$OVERLAY_DIR",workdir="$WORK_DIR" \
+    "$TARGET_DIR"
+
+done
+
+echo "All overlays mounted"

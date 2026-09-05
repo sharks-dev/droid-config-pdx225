@@ -7,7 +7,7 @@ Requires=vendor.mount
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/mount-overlays /overlays
+ExecStart=/usr/bin/droid/mount-overlays /overlays
 RemainAfterExit=true
 
 [Install]
