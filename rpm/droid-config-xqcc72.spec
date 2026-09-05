@@ -35,6 +35,8 @@ Requires: libgbinder-tools
 %include patterns/patterns-sailfish-device-adaptation-xqcc72.inc
 %include patterns/patterns-sailfish-device-configuration-xqcc72.inc
 
+%global __requires_exclude ^(lib.*\\.so.*)$
+
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:
 #define some_macro "I'll not be defined because I don't have % in front"
