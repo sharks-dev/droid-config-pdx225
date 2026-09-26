@@ -27,7 +27,7 @@ Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
 # Sensors
-Requires: sensorfw-qt5 = 0.15.1
+Requires: sensorfw-qt5
 Requires: hybris-libsensorfw-qt5-binder >= 0.15.2
 
 # Bluetooth
