@@ -1,6 +1,6 @@
 AUTHOR=sharks
-EMAIL=
-BROKEN=Rejecting calls,Dual-sim
+EMAIL=sharks.dev.000@gmail.com
+BROKEN=Dual-sim,Bluetooth calls
 FEATURES=VoLTE,More featured than Official port
 DEVICE=Xperia 10 IV
 URL=https://forum.sailfishos.org/t/lineage-based-port-for-xperia-10-iv/30708
