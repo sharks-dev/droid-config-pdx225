@@ -1,0 +1,18 @@
+PATCH_FILE="/usr/share/jolla-startupwizard/main.qml.patch"
+TARGET_FILE="/usr/share/jolla-startupwizard/main.qml"
+
+if [ -f "$PATCH_FILE" ] && [ -f "$TARGET_FILE" ]; then
+    if ! patch -p1 -d / --ignore-whitespace --fuzz=3 < "$PATCH_FILE"; then
+        echo "===================================================="
+        echo "=== PATCH FAILED! DUMPING REJECT FILE: ==="
+        echo "===================================================="
+        cat /usr/share/jolla-startupwizard/main.qml.rej 2>/dev/null || true
+        echo "===================================================="
+        echo "=== TARGET main.qml LINES 35-70 ==="
+        echo "===================================================="
+        sed -n '35,70p' "$TARGET_FILE"
+        echo "===================================================="
+        exit 1
+    fi
+    rm -f "$PATCH_FILE"
+fi

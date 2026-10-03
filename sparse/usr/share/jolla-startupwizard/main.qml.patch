@@ -1,0 +1,39 @@
+--- /usr/share/jolla-startupwizard/main.qml	2026-10-03 22:57:28.419765147 +1000
++++ /usr/share/jolla-startupwizard/main.qml	2026-10-03 22:59:35.193286925 +1000
+@@ -46,7 +46,7 @@
+                                                 ? _pageAfterFingerPrint
+                                                 : networkCheckComponent
+ 
+-    property Component _pageAfterAccountSetup: tutorialMainComponent
++    property Component _pageAfterAccountSetup: verdandiTeamComponent
+ 
+     readonly property Component _pageAfterFingerPrint: {
+         var pageAfterFingerPrint = Qt.createComponent(Qt.resolvedUrl("extensions/PageAfterFingerPrint.qml"))
+@@ -56,6 +56,14 @@
+         return pageAfterFingerPrint
+     }
+ 
++    readonly property Component verdandiTeamComponent: {
++        var comp = Qt.createComponent(Qt.resolvedUrl("VerdanditeamDialog.qml"))
++        if (comp.status != Component.Ready) {
++            return fingerprintSettings.hasSensor ? fingerEnrollmentComponent : tutorialMainComponent
++        }
++        return comp
++    }
++
+     readonly property Component tutorialMainComponent: {
+         var tutorial = Qt.createComponent(pageStack.resolveImportPage("Sailfish.Tutorial.TutorialEntryPage"))
+         if (tutorial.status != Component.Ready) {
+@@ -368,4 +376,12 @@
+             }
+         }
+     }
++
++    Component {
++        id: verdandiTeamComponent
++
++        VerdanditeamDialog {
++            acceptDestination: tutorialMainComponent
++        }
++    }
+ }

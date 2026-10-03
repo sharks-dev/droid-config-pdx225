@@ -1,0 +1,11 @@
+[Unit]
+Description=Install selected packages from first-boot wizard
+After=jolla-startupwizard.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/verdandi-firstboot-installer.sh
+
+[Install]
+WantedBy=multi-user.target
