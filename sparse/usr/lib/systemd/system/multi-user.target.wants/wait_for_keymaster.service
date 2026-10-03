@@ -1,1 +1,1 @@
-build/bazel/bazel.WORKSPACE
+../wait_for_keymaster.service
